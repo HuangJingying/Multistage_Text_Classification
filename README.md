@@ -5,9 +5,10 @@ Develop a Multistage Text Classifier for multiple rounds of dialogue.
 
 Develop an intelligent robot that can automatically call customers, invite them to attend conferences, and answer their questions.
 
-- $==>$ Let the machine understand customers' questions and provide appropriate answers. 
+- Let the machine understand customers' questions and provide appropriate answers: the semantic analysis task was transformed into a classification task, where a Multi-stages Text Classifier Model determined the category of customer's answer based on the text information, and the system set the corresponding discourse for all answer categories, thus enabling multiple rounds of dialogue.
 
-- $==>$  Multi-label text classification problem
+- Solve Multi-label text classification problem: adopted Naive Bayesian (NB) algorithm to build a Multi-stages Text Classifier Model for short sentences classification, based on semantic similarity within the given category.
+
 
 ## 2. Usage.
 
@@ -112,6 +113,6 @@ Prefix dict has been built successfully.
 预测结果可信度（0-1）： [0.14935065]
 ```
 
-#### 3 Caution
+## 3 Caution
 
 ! Cannot handle nonsensical sentences: if a nonsensical sentence is entered, i.e. a word or sentence that is not included in the training data, the algorithm does not necessarily recognize it as "not recognized"
